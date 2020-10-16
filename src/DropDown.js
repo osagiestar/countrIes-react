@@ -4,14 +4,15 @@ import countriesAll from "./countriesAll.json";
  const DropDown = ({ regionsVal }) => {
 
   const [regions, setRegions] = useState(countriesAll);
-  console.log(countriesAll);
+  console.log(countriesAll); 
+  console.log(regions);
 
   function dropDownHandler(event) {
     setRegions(event.target.value)
     // regionsVal(event.target.value)
     console.log(event.target.value);
   }
-
+  
   let regionsList = [];
   countriesAll.forEach(item => {!regionsList.includes(item.region) && regionsList.push(item.region);
   !item.region && console.log(item.name)}) ;
@@ -41,10 +42,5 @@ import countriesAll from "./countriesAll.json";
     </div>
   );
 }
-
-
-{/* const names = ['John', 'Paul', 'George', 'Ringo', 'John'];
-let x = (names) => names.filter((v,i) => names.indexOf(v) === i)
-x(names); // 'John', 'Paul', 'George', 'Ringo' */}
 
 export default DropDown;

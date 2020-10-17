@@ -21,7 +21,6 @@ import countriesAll from "./countriesAll.json";
   }) ;
   //console.log(regionsList);
 
-  
 
   return (
     <div>

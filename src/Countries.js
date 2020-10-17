@@ -59,7 +59,7 @@ const Countries = () => {
 
   const countryInfo = (name) => {
     setCountries([]);
-    setOneCountry(countriesAll.find(item => item.alpha3Code===name))
+    setOneCountry(countriesAll.find(item => item.name===name))
   };
 
   const goBack = () => {
@@ -83,6 +83,7 @@ const Countries = () => {
           country={oneCountry}
           goBack={goBack}
           countryInfo={countryInfo}
+          countriesAll={countriesAll}
         />
       </div>
     </div>

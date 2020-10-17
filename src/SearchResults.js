@@ -22,7 +22,7 @@ countryInfo(e.target.alt);
           <img
             src={country.flag}
             // value={}
-          alt={country.alpha3Code}
+          alt={country.name}
             style={{ width: "250px", height: "220px" }}
           />
           <div> {country.name} </div>

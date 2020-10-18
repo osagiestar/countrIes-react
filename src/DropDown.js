@@ -7,7 +7,7 @@ import countriesAll from "./countriesAll.json";
   // const [selectedRegion, setSelectedRegion] = useState();
 
   // console.log(countriesAll); 
-  // console.log(regions);
+  console.log(regions);
 
   function dropDownHandler(event) {
     setRegions(event.target.value)

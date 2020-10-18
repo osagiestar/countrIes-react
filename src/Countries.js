@@ -75,8 +75,8 @@ const Countries = () => {
 
   return (
     <div className="App-content">
-      <Search searchFn={search} />
-      <DropDown changeRegion={regionsVal} />
+      <Search searchFn={search} /> <br/>
+      <DropDown changeRegion={regionsVal} /> <br/>
       <div className="container">
         <SearchResults results={countries} countryInfo={countryInfo} />
         <CountryBorders

@@ -33,8 +33,9 @@ import React from 'react';
                    // value={}
                    alt={item.flag}
                    style={{ width: "100px", height: "auto" }}
-                 />
-                 <p>{item.name}</p>
+                 /> 
+                 <br/>
+                 <div> <button>{item.name}</button></div>
                </li>
              ))}
          </ul>

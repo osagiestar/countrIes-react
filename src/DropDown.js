@@ -27,7 +27,7 @@ import countriesAll from "./countriesAll.json";
       <label id="selector">
         Choose a Region:
         <select onChange={dropDownHandler}>
-            <option key={"All"} value={"All"}> All regions </option>
+            <option key={"All"} value={"All"}> Filter by region </option>
           {regionsList.map((region) => (
             <option key={region} value={region}>
               {region ? region:"Undefined"}

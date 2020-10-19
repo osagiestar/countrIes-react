@@ -12,7 +12,7 @@ const Countries = () => {
   const [countriesAll, setCountriesAll] = useState([]); 
   const [countrySearch, setCountrySearch] = useState("");
   const [regionName, setRegionName] = useState("All");
-  const [oneCountry, setOneCountry] = useState([]);
+  const [oneCountry, setOneCountry] = useState("");
 
   useEffect(() => {
       fetch(`https://restcountries.eu/rest/v2/all`)
